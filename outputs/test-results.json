@@ -1,0 +1,1752 @@
+{
+  "config": {
+    "configFile": "D:\\Playwright\\playwrightAutoFramework\\playwright.config.ts",
+    "rootDir": "D:/Playwright/playwrightAutoFramework/toolshop/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./outputs/test-results.json"
+        }
+      ],
+      [
+        "D:\\Playwright\\playwrightAutoFramework\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "outputFolder": "allure-results/toolshop"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "./html-report/toolshop",
+          "open": "never"
+        }
+      ],
+      [
+        "D:\\Playwright\\playwrightAutoFramework\\node_modules\\monocart-reporter\\lib\\index.js",
+        {
+          "name": "toolshop Test Execution Results 2025-08-19",
+          "outputFile": "./test-results/toolshop/index.html",
+          "autoOpen": false,
+          "attachments": false,
+          "trace": false,
+          "screenshots": false,
+          "inlineAttachments": false,
+          "metadata": false
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/Playwright/playwrightAutoFramework/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/Playwright/playwrightAutoFramework/toolshop/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.54.2",
+    "workers": 3,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "smoke\\ContactPage.test.ts",
+      "file": "smoke/ContactPage.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Register Page Tests",
+          "file": "smoke/ContactPage.test.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify Contact Link is Visible",
+              "ok": true,
+              "tags": [
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 52421,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User verifies Contact Link is Visible",
+                          "duration": 6937
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:05:59.682Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-ContactPage-Register-83f40-ify-Contact-Link-is-Visible-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eeb42cd91b94d4f2c4e7-059c2cb0129097e6f80e",
+              "file": "smoke/ContactPage.test.ts",
+              "line": 11,
+              "column": 9
+            },
+            {
+              "title": "Verify Contact Form is Visible",
+              "ok": true,
+              "tags": [
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 72558,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User navigates to Contact Page",
+                          "duration": 39873
+                        },
+                        {
+                          "title": "User clicks Contact Link",
+                          "duration": 1244
+                        },
+                        {
+                          "title": "User verifies Contact Form is Visible",
+                          "duration": 103
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:05:59.613Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-ContactPage-Register-ec03b-ify-Contact-Form-is-Visible-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eeb42cd91b94d4f2c4e7-5ed92d614bdca4ba43ec",
+              "file": "smoke/ContactPage.test.ts",
+              "line": 17,
+              "column": 9
+            },
+            {
+              "title": "Verify successful message submission from Contact page",
+              "ok": true,
+              "tags": [
+                "Smoke",
+                "Regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 270000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\ContactPage.test.ts",
+                        "line": 30,
+                        "column": 14
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 66217,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User navigates to Contact Page",
+                          "duration": 17322
+                        },
+                        {
+                          "title": "User clicks Contact Link",
+                          "duration": 1139
+                        },
+                        {
+                          "title": "User fills Contact Form",
+                          "duration": 12160
+                        },
+                        {
+                          "title": "User verifies Success Message",
+                          "duration": 1684
+                        },
+                        {
+                          "title": "User verifies Logout link is visible",
+                          "duration": 68
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:05:59.714Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\ContactPage.test.ts",
+                            "line": 30,
+                            "column": 14
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-ContactPage-Register-53dfa-ubmission-from-Contact-page-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eeb42cd91b94d4f2c4e7-f1922512af301978f8c3",
+              "file": "smoke/ContactPage.test.ts",
+              "line": 29,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "smoke\\HomePage.test.ts",
+      "file": "smoke/HomePage.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Home Page Tests",
+          "file": "smoke/HomePage.test.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify Home Page Title",
+              "ok": true,
+              "tags": [
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 270000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\HomePage.test.ts",
+                        "line": 12,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9885,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User captures Home Page Title",
+                          "duration": 1080
+                        },
+                        {
+                          "title": "User verifies Home Page Title",
+                          "duration": 5
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:06:56.150Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\HomePage.test.ts",
+                            "line": 12,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-HomePage-Home-Page-Tests-Verify-Home-Page-Title-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1f6eed042b990152e946-efe96c69c1a7982b197d",
+              "file": "smoke/HomePage.test.ts",
+              "line": 10,
+              "column": 7
+            },
+            {
+              "title": "Verify Sign In Link is Visible",
+              "ok": true,
+              "tags": [
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 53006,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User verifies Sign In Link is Visible",
+                          "duration": 148
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:07:06.067Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-HomePage-Home-Page-T-48015-ify-Sign-In-Link-is-Visible-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1f6eed042b990152e946-ea6924d50138996c33d0",
+              "file": "smoke/HomePage.test.ts",
+              "line": 21,
+              "column": 7
+            },
+            {
+              "title": "Verify Left Panel Sections are Visible",
+              "ok": true,
+              "tags": [
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 270000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\HomePage.test.ts",
+                        "line": 28,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 7726,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User verifies Sort Section is visible",
+                          "duration": 324
+                        },
+                        {
+                          "title": "User verifies Price Range Section is visible",
+                          "duration": 10
+                        },
+                        {
+                          "title": "User verifies Search Section is visible",
+                          "duration": 349
+                        },
+                        {
+                          "title": "User verifies Filters Section is visible",
+                          "duration": 19
+                        },
+                        {
+                          "title": "User verifies By Category Section is visible",
+                          "duration": 14
+                        },
+                        {
+                          "title": "User verifies By Brand Section is visible",
+                          "duration": 11
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:07:09.921Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\HomePage.test.ts",
+                            "line": 28,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-HomePage-Home-Page-T-7e829--Panel-Sections-are-Visible-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1f6eed042b990152e946-afcd60b6cd530459a9af",
+              "file": "smoke/HomePage.test.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "Verify Page Navigation Menus are visible",
+              "ok": true,
+              "tags": [
+                "Smoke",
+                "Regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 270000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\HomePage.test.ts",
+                        "line": 61,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 12909,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User verifies Home Link is visible",
+                          "duration": 112
+                        },
+                        {
+                          "title": "User verifies Sign In Link is visible",
+                          "duration": 14
+                        },
+                        {
+                          "title": "User verifies Categories Link is visible",
+                          "duration": 15
+                        },
+                        {
+                          "title": "User verifies Contact Link is visible",
+                          "duration": 14
+                        },
+                        {
+                          "title": "User verifies Language Button is visible",
+                          "duration": 22
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:07:16.383Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\HomePage.test.ts",
+                            "line": 61,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-HomePage-Home-Page-T-fe863-avigation-Menus-are-visible-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1f6eed042b990152e946-7f11d766e4b0c04f788c",
+              "file": "smoke/HomePage.test.ts",
+              "line": 60,
+              "column": 7
+            },
+            {
+              "title": "Verify 9 Product cards are loaded in Homepage",
+              "ok": true,
+              "tags": [
+                "Smoke",
+                "Regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 270000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\HomePage.test.ts",
+                        "line": 91,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 11384,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User verifies Product cards are loaded",
+                          "duration": 333
+                        },
+                        {
+                          "title": "User verifies 9 Product cards are displayed",
+                          "duration": 239
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:07:17.689Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\HomePage.test.ts",
+                            "line": 91,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-HomePage-Home-Page-T-fc2be-ards-are-loaded-in-Homepage-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1f6eed042b990152e946-6dc417f28e47e1c4365d",
+              "file": "smoke/HomePage.test.ts",
+              "line": 90,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "smoke\\LoginPage.test.ts",
+      "file": "smoke/LoginPage.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Page Tests",
+          "file": "smoke/LoginPage.test.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify Sign In Link is Visible",
+              "ok": true,
+              "tags": [
+                "Smoke",
+                "Regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 11911,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User verifies Sign In Link is Visible",
+                          "duration": 2758
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:07:29.125Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-LoginPage-Login-Page-af961-ify-Sign-In-Link-is-Visible-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b4519f94ff1c5c365994-70c3d8e0ede6a387d48f",
+              "file": "smoke/LoginPage.test.ts",
+              "line": 13,
+              "column": 7
+            },
+            {
+              "title": "Verify Login screen displayed when user clicks Sign In",
+              "ok": true,
+              "tags": [
+                "Smoke",
+                "Regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 270000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\LoginPage.test.ts",
+                        "line": 20,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 12596,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User clicks Sign In",
+                          "duration": 5555
+                        },
+                        {
+                          "title": "User verifies Login Form is displayed",
+                          "duration": 8
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:07:29.352Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\LoginPage.test.ts",
+                            "line": 20,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-LoginPage-Login-Page-2c518-ed-when-user-clicks-Sign-In-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b4519f94ff1c5c365994-a0f2bca2c79b1e8e1d17",
+              "file": "smoke/LoginPage.test.ts",
+              "line": 19,
+              "column": 7
+            },
+            {
+              "title": "Verify Login Form fields are visible",
+              "ok": true,
+              "tags": [
+                "Smoke",
+                "Regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 270000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\LoginPage.test.ts",
+                        "line": 31,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 15251,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User clicks Sign In",
+                          "duration": 4141
+                        },
+                        {
+                          "title": "User verifies Email field is visible",
+                          "duration": 412
+                        },
+                        {
+                          "title": "User verifies Password field is visible",
+                          "duration": 121
+                        },
+                        {
+                          "title": "User verifies SignIn With Google button is visible",
+                          "duration": 65
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:07:41.196Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\LoginPage.test.ts",
+                            "line": 31,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-LoginPage-Login-Page-5ba65-gin-Form-fields-are-visible-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b4519f94ff1c5c365994-9683a6b577954ef0628c",
+              "file": "smoke/LoginPage.test.ts",
+              "line": 30,
+              "column": 7
+            },
+            {
+              "title": "Verify Forgot Password link is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 270000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\LoginPage.test.ts",
+                        "line": 47,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 15730,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User clicks Sign In",
+                          "duration": 3800
+                        },
+                        {
+                          "title": "User verifies Forgot Password link is visible",
+                          "duration": 94
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:07:42.061Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\LoginPage.test.ts",
+                            "line": 47,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-LoginPage-Login-Page-69e73-ot-Password-link-is-visible-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b4519f94ff1c5c365994-e51d2dcb119a8e48e7ef",
+              "file": "smoke/LoginPage.test.ts",
+              "line": 46,
+              "column": 7
+            },
+            {
+              "title": "Verify Register link is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 51060,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User clicks Sign In",
+                          "duration": 21391
+                        },
+                        {
+                          "title": "User verifies Register link is visible",
+                          "duration": 945
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:07:56.686Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-LoginPage-Login-Page-3c8bd-fy-Register-link-is-visible-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b4519f94ff1c5c365994-0a453b45f9d41e46407d",
+              "file": "smoke/LoginPage.test.ts",
+              "line": 56,
+              "column": 7
+            },
+            {
+              "title": "Verify successful login with valid credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 270000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\LoginPage.test.ts",
+                        "line": 66,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 51568,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User clicks Sign In",
+                          "duration": 1842
+                        },
+                        {
+                          "title": "User fills Email",
+                          "duration": 14642
+                        },
+                        {
+                          "title": "User fills Password",
+                          "duration": 6114
+                        },
+                        {
+                          "title": "User clicks Login Button",
+                          "duration": 2446
+                        },
+                        {
+                          "title": "User verifies My Account page is displayed",
+                          "duration": 5969
+                        },
+                        {
+                          "title": "User verifies Logout link is visible",
+                          "duration": 3833
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:07:57.819Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\LoginPage.test.ts",
+                            "line": 66,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-LoginPage-Login-Page-f99b9-ogin-with-valid-credentials-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b4519f94ff1c5c365994-77ea3ee0324a53f8d881",
+              "file": "smoke/LoginPage.test.ts",
+              "line": 65,
+              "column": 7
+            },
+            {
+              "title": "Verify unsuccessful login with invalid credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 270000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\LoginPage.test.ts",
+                        "line": 88,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 49447,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User clicks Sign In",
+                          "duration": 19161
+                        },
+                        {
+                          "title": "User fills Email",
+                          "duration": 4384
+                        },
+                        {
+                          "title": "User fills Password",
+                          "duration": 1171
+                        },
+                        {
+                          "title": "User clicks Login Button",
+                          "duration": 3508
+                        },
+                        {
+                          "title": "User verifies Unsuccessful Login",
+                          "duration": 1074
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:07:59.114Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\LoginPage.test.ts",
+                            "line": 88,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-LoginPage-Login-Page-27bb7-in-with-invalid-credentials-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b4519f94ff1c5c365994-63c292520001518a9ed1",
+              "file": "smoke/LoginPage.test.ts",
+              "line": 87,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "smoke\\MyAccount.test.ts",
+      "file": "smoke/MyAccount.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "My Account Page Tests",
+          "file": "smoke/MyAccount.test.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify Sign In Link is Visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 25361,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User verifies Sign In Link is Visible",
+                          "duration": 256
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:08:47.802Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-MyAccount-My-Account-ebf60-ify-Sign-In-Link-is-Visible-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9dc9ad9722c21a54c17a-251cc8a205f8b210a61b",
+              "file": "smoke/MyAccount.test.ts",
+              "line": 13,
+              "column": 7
+            },
+            {
+              "title": "Verify My Account Page is displayed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 40483,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User clicks Sign In",
+                          "duration": 8195
+                        },
+                        {
+                          "title": "User fills Email",
+                          "duration": 5157
+                        },
+                        {
+                          "title": "User fills Password",
+                          "duration": 1064
+                        },
+                        {
+                          "title": "User clicks Login Button",
+                          "duration": 1209
+                        },
+                        {
+                          "title": "User verifies My Account Page",
+                          "duration": 2760
+                        },
+                        {
+                          "title": "User verifies Logout link is visible",
+                          "duration": 186
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:08:48.650Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-MyAccount-My-Account-6e3ae-y-Account-Page-is-displayed-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9dc9ad9722c21a54c17a-fd1283469967446449e1",
+              "file": "smoke/MyAccount.test.ts",
+              "line": 19,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "smoke\\RegisterUser.spec.ts",
+      "file": "smoke/RegisterUser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Register Page Tests",
+          "file": "smoke/RegisterUser.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify Register link is visible",
+              "ok": true,
+              "tags": [
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 37939,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User clicks Sign In",
+                          "duration": 10832
+                        },
+                        {
+                          "title": "User verifies Register link is visible",
+                          "duration": 651
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:08:49.436Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-RegisterUser-Registe-4ad60-fy-Register-link-is-visible-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a862e580dea3469a7cc3-c16e0071eb666c7b6fbe",
+              "file": "smoke/RegisterUser.spec.ts",
+              "line": 8,
+              "column": 7
+            },
+            {
+              "title": "Verify Register link navigates to Register User page",
+              "ok": true,
+              "tags": [
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 13799,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User clicks Sign In",
+                          "duration": 1540
+                        },
+                        {
+                          "title": "User navigates to Register User page",
+                          "duration": 2078
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:09:13.204Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-RegisterUser-Registe-c850a-gates-to-Register-User-page-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a862e580dea3469a7cc3-34a186e537f33dd92ab2",
+              "file": "smoke/RegisterUser.spec.ts",
+              "line": 17,
+              "column": 7
+            },
+            {
+              "title": "Verify successful registration redirects to Sign-In page",
+              "ok": true,
+              "tags": [
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 270000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\RegisterUser.spec.ts",
+                        "line": 28,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 73922,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User clicks Sign In",
+                          "duration": 12115
+                        },
+                        {
+                          "title": "User navigates to Register User page",
+                          "duration": 5363
+                        },
+                        {
+                          "title": "User fills Registration Form",
+                          "duration": 20439
+                        },
+                        {
+                          "title": "User selects Country",
+                          "duration": 1015
+                        },
+                        {
+                          "title": "User submits Registration Form",
+                          "duration": 3823
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:09:27.078Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\RegisterUser.spec.ts",
+                            "line": 28,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-RegisterUser-Registe-f9a64-n-redirects-to-Sign-In-page-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a862e580dea3469a7cc3-d24d48ca94793bed780a",
+              "file": "smoke/RegisterUser.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "Verify *Required/Mandatory* fields are validated with Error messages on blank submit of Register User form",
+              "ok": true,
+              "tags": [
+                "Smoke",
+                "Regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 69276,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User clicks Sign In",
+                          "duration": 8445
+                        },
+                        {
+                          "title": "User navigates to Register User page",
+                          "duration": 17149
+                        },
+                        {
+                          "title": "User submits blank Registration Form",
+                          "duration": 2401
+                        },
+                        {
+                          "title": "User verifies error message is visible on blank submit",
+                          "duration": 4434
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:09:27.542Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-RegisterUser-Registe-c0e30-ubmit-of-Register-User-form-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a862e580dea3469a7cc3-8a075c5753f53e414134",
+              "file": "smoke/RegisterUser.spec.ts",
+              "line": 46,
+              "column": 7
+            },
+            {
+              "title": "Verify newly added user can log in",
+              "ok": true,
+              "tags": [
+                "Smoke",
+                "Regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 270000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\RegisterUser.spec.ts",
+                        "line": 62,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 73187,
+                      "error": {
+                        "message": "TimeoutError: page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//h1[normalize-space()=\\'My account\\']') to be visible\u001b[22m\n",
+                        "stack": "TimeoutError: page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//h1[normalize-space()=\\'My account\\']') to be visible\u001b[22m\n\n    at LocatorUtils.waitForSelector (D:\\Playwright\\playwrightAutoFramework\\utilities\\locatorUtils.ts:6:20)\n    at LoginPage.verifyMyAccountPage (D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\pages\\LoginPage.ts:74:33)\n    at D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\RegisterUser.spec.ts:76:23\n    at D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\RegisterUser.spec.ts:75:16",
+                        "location": {
+                          "file": "D:\\Playwright\\playwrightAutoFramework\\utilities\\locatorUtils.ts",
+                          "column": 20,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\..\\..\\utilities\\locatorUtils.ts:6\n\n\u001b[0m \u001b[90m 4 |\u001b[39m     \n \u001b[90m 5 |\u001b[39m     \u001b[36masync\u001b[39m waitForSelector(page\u001b[33m:\u001b[39m \u001b[33mPage\u001b[39m\u001b[33m,\u001b[39m selector\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m options\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m { state\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m \u001b[33m|\u001b[39m \u001b[32m'hidden'\u001b[39m \u001b[33m|\u001b[39m \u001b[32m'attached'\u001b[39m \u001b[33m|\u001b[39m \u001b[32m'detached'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m number })\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(selector\u001b[33m,\u001b[39m options \u001b[33m?\u001b[39m\u001b[33m?\u001b[39m {})\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m     }\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m     \u001b[36masync\u001b[39m waitAndClick(page\u001b[33m:\u001b[39m \u001b[33mPage\u001b[39m\u001b[33m,\u001b[39m selector\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m options\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m { timeout\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m number }) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Playwright\\playwrightAutoFramework\\utilities\\locatorUtils.ts",
+                            "column": 20,
+                            "line": 6
+                          },
+                          "message": "TimeoutError: page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//h1[normalize-space()=\\'My account\\']') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\..\\..\\utilities\\locatorUtils.ts:6\n\n\u001b[0m \u001b[90m 4 |\u001b[39m     \n \u001b[90m 5 |\u001b[39m     \u001b[36masync\u001b[39m waitForSelector(page\u001b[33m:\u001b[39m \u001b[33mPage\u001b[39m\u001b[33m,\u001b[39m selector\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m options\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m { state\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m \u001b[33m|\u001b[39m \u001b[32m'hidden'\u001b[39m \u001b[33m|\u001b[39m \u001b[32m'attached'\u001b[39m \u001b[33m|\u001b[39m \u001b[32m'detached'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m number })\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(selector\u001b[33m,\u001b[39m options \u001b[33m?\u001b[39m\u001b[33m?\u001b[39m {})\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m     }\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m     \u001b[36masync\u001b[39m waitAndClick(page\u001b[33m:\u001b[39m \u001b[33mPage\u001b[39m\u001b[33m,\u001b[39m selector\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m options\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m { timeout\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m number }) {\u001b[0m\n\u001b[2m    at LocatorUtils.waitForSelector (D:\\Playwright\\playwrightAutoFramework\\utilities\\locatorUtils.ts:6:20)\u001b[22m\n\u001b[2m    at LoginPage.verifyMyAccountPage (D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\pages\\LoginPage.ts:74:33)\u001b[22m\n\u001b[2m    at D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\RegisterUser.spec.ts:76:23\u001b[22m\n\u001b[2m    at D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\RegisterUser.spec.ts:75:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "User clicks Sign In",
+                          "duration": 23424
+                        },
+                        {
+                          "title": "User fills Email",
+                          "duration": 974
+                        },
+                        {
+                          "title": "User fills Password",
+                          "duration": 1247
+                        },
+                        {
+                          "title": "User clicks Login Button",
+                          "duration": 2811
+                        },
+                        {
+                          "title": "User waits for My Account Page",
+                          "duration": 15135,
+                          "error": {
+                            "message": "TimeoutError: page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//h1[normalize-space()=\\'My account\\']') to be visible\u001b[22m\n",
+                            "stack": "TimeoutError: page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//h1[normalize-space()=\\'My account\\']') to be visible\u001b[22m\n\n    at LocatorUtils.waitForSelector (D:\\Playwright\\playwrightAutoFramework\\utilities\\locatorUtils.ts:6:20)\n    at LoginPage.verifyMyAccountPage (D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\pages\\LoginPage.ts:74:33)\n    at D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\RegisterUser.spec.ts:76:23\n    at D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\RegisterUser.spec.ts:75:16",
+                            "location": {
+                              "file": "D:\\Playwright\\playwrightAutoFramework\\utilities\\locatorUtils.ts",
+                              "column": 20,
+                              "line": 6
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m..\\..\\..\\utilities\\locatorUtils.ts:6\n\n\u001b[0m \u001b[90m 4 |\u001b[39m     \n \u001b[90m 5 |\u001b[39m     \u001b[36masync\u001b[39m waitForSelector(page\u001b[33m:\u001b[39m \u001b[33mPage\u001b[39m\u001b[33m,\u001b[39m selector\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m options\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m { state\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m \u001b[33m|\u001b[39m \u001b[32m'hidden'\u001b[39m \u001b[33m|\u001b[39m \u001b[32m'attached'\u001b[39m \u001b[33m|\u001b[39m \u001b[32m'detached'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m number })\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(selector\u001b[33m,\u001b[39m options \u001b[33m?\u001b[39m\u001b[33m?\u001b[39m {})\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m     }\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m     \u001b[36masync\u001b[39m waitAndClick(page\u001b[33m:\u001b[39m \u001b[33mPage\u001b[39m\u001b[33m,\u001b[39m selector\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m options\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m { timeout\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m number }) {\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:09:29.174Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\RegisterUser.spec.ts",
+                            "line": 62,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-RegisterUser-Registe-8e31e-newly-added-user-can-log-in-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-RegisterUser-Registe-8e31e-newly-added-user-can-log-in-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-RegisterUser-Registe-8e31e-newly-added-user-can-log-in-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Playwright\\playwrightAutoFramework\\utilities\\locatorUtils.ts",
+                        "column": 20,
+                        "line": 6
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14751,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "User clicks Sign In",
+                          "duration": 1224
+                        },
+                        {
+                          "title": "User fills Email",
+                          "duration": 1189
+                        },
+                        {
+                          "title": "User fills Password",
+                          "duration": 1162
+                        },
+                        {
+                          "title": "User clicks Login Button",
+                          "duration": 1296
+                        },
+                        {
+                          "title": "User waits for My Account Page",
+                          "duration": 1310
+                        }
+                      ],
+                      "startTime": "2025-08-19T10:10:49.881Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\RegisterUser.spec.ts",
+                            "line": 62,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-RegisterUser-Registe-8e31e-newly-added-user-can-log-in-chromium-retry1\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-RegisterUser-Registe-8e31e-newly-added-user-can-log-in-chromium-retry1\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "a862e580dea3469a7cc3-717b6bb706bc6da90a6e",
+              "file": "smoke/RegisterUser.spec.ts",
+              "line": 61,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-08-19T10:05:52.160Z",
+    "duration": 315812.468,
+    "expected": 21,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 1
+  }
+}
