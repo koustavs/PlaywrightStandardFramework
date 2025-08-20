@@ -1,8 +1,6 @@
 import test, { expect, Page, BrowserContext } from '@playwright/test';
 import locators from '../objectRepo/locators.json';
 import { LocatorUtils } from '../../../utilities/locatorUtils';
-import path from 'path';
-import fs from 'fs';
 
 export class LoginPage {
 
@@ -23,9 +21,10 @@ export class LoginPage {
         await this.page.click(locators.NavMenu.SignIn_NavMenu);
     }
 
-    async isLoginFormVisible(): Promise<boolean> {
+    async isLoginFormVisible(): Promise<void> {
         await this.locatorUtils.waitForSelector(this.page, locators.LoginPage.LoginForm, { state: 'visible' });
-        return await this.page.isVisible(locators.LoginPage.LoginForm);
+        const LoginForm = await this.page.isVisible(locators.LoginPage.LoginForm);
+        expect(LoginForm).toBe(true);
     }
 
     async isEmailFieldVisible(): Promise<void> {

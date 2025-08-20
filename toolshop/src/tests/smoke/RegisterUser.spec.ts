@@ -77,5 +77,4 @@ test.describe('Register Page Tests', () => {
     });
   });
 
-
 });

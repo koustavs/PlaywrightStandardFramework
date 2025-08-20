@@ -25,11 +25,13 @@ export class ContactPage {
     }
 
     async isContactLinkVisible(): Promise<void> {
+        await this.locatorUtils.waitForSelector(this.page, locators.NavMenu.Contact_NavMenu, { state: 'visible' });
         const contactLink = await this.page.isVisible(locators.NavMenu.Contact_NavMenu);
         expect(contactLink).toBe(true);
     }
 
     async isContactFormVisible(): Promise<void> {
+        await this.locatorUtils.waitForSelector(this.page, locators.ContactPage.ContactFormHeader, { state: 'visible' });
         const contactForm = await this.page.isVisible(locators.ContactPage.ContactFormHeader);
         expect(contactForm).toBe(true);
     }
@@ -39,6 +41,7 @@ export class ContactPage {
     }
 
     async fillContactForm(subjectValue = 'Customer service') {
+        await this.locatorUtils.waitForSelector(this.page, locators.ContactPage.SendMessage_Btn, { state: 'visible' });
         if (await this.page.locator(locators.ContactPage.FirstName_Txt).isVisible()) {
             await this.page.fill(locators.ContactPage.FirstName_Txt, 'John');
         }

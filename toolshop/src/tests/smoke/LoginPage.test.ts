@@ -1,6 +1,4 @@
 import test from '../../pages/BasePage';
-import { expect } from '@playwright/test';
-import locators from '../../objectRepo/locators.json';
 
 const email = 'customer@practicesoftwaretesting.com';
 const password = 'welcome01';
@@ -21,9 +19,8 @@ test.describe('Login Page Tests', () => {
     await test.step('User clicks Sign In', async () => {
       await LoginPage.clickSignIn();
     });
-    const loginForm = await LoginPage.isLoginFormVisible();
     await test.step('User verifies Login Form is displayed', async () => {
-      expect(loginForm).toBe(true);
+      await LoginPage.isLoginFormVisible();
     });
   });
 
