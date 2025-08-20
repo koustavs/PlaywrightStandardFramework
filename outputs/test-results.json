@@ -45,7 +45,7 @@
       [
         "D:\\Playwright\\playwrightAutoFramework\\node_modules\\monocart-reporter\\lib\\index.js",
         {
-          "name": "toolshop Test Execution Results 2025-08-19",
+          "name": "toolshop Test Execution Results 2025-08-20",
           "outputFile": "./test-results/toolshop/index.html",
           "autoOpen": false,
           "attachments": false,
@@ -118,7 +118,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 52421,
+                      "duration": 85746,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -126,10 +126,10 @@
                       "steps": [
                         {
                           "title": "User verifies Contact Link is Visible",
-                          "duration": 6937
+                          "duration": 26618
                         }
                       ],
-                      "startTime": "2025-08-19T10:05:59.682Z",
+                      "startTime": "2025-08-20T16:35:24.618Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -166,7 +166,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 72558,
+                      "duration": 95234,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -174,18 +174,18 @@
                       "steps": [
                         {
                           "title": "User navigates to Contact Page",
-                          "duration": 39873
+                          "duration": 39106
                         },
                         {
                           "title": "User clicks Contact Link",
-                          "duration": 1244
+                          "duration": 1900
                         },
                         {
                           "title": "User verifies Contact Form is Visible",
-                          "duration": 103
+                          "duration": 550
                         }
                       ],
-                      "startTime": "2025-08-19T10:05:59.613Z",
+                      "startTime": "2025-08-20T16:35:24.518Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -232,7 +232,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 66217,
+                      "duration": 129817,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -240,26 +240,26 @@
                       "steps": [
                         {
                           "title": "User navigates to Contact Page",
-                          "duration": 17322
+                          "duration": 50351
                         },
                         {
                           "title": "User clicks Contact Link",
-                          "duration": 1139
+                          "duration": 1518
                         },
                         {
                           "title": "User fills Contact Form",
-                          "duration": 12160
+                          "duration": 15566
                         },
                         {
                           "title": "User verifies Success Message",
-                          "duration": 1684
+                          "duration": 1028
                         },
                         {
                           "title": "User verifies Logout link is visible",
-                          "duration": 68
+                          "duration": 466
                         }
                       ],
-                      "startTime": "2025-08-19T10:05:59.714Z",
+                      "startTime": "2025-08-20T16:35:24.307Z",
                       "annotations": [
                         {
                           "type": "slow",
@@ -301,7 +301,7 @@
         {
           "title": "Home Page Tests",
           "file": "smoke/HomePage.test.ts",
-          "line": 5,
+          "line": 3,
           "column": 6,
           "specs": [
             {
@@ -318,7 +318,7 @@
                       "type": "slow",
                       "location": {
                         "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\HomePage.test.ts",
-                        "line": 12,
+                        "line": 9,
                         "column": 10
                       }
                     }
@@ -331,28 +331,38 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 9885,
+                      "duration": 31178,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "Page title is: Practice Software Testing - Toolshop - v5.0\n"
+                        },
+                        {
+                          "text": "Page title is: Practice Software Testing - Toolshop - v5.0\n"
+                        },
+                        {
+                          "text": "Page actualTitle is: Practice Software Testing - Toolshop - v5.0\n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
                           "title": "User captures Home Page Title",
-                          "duration": 1080
+                          "duration": 2507
                         },
                         {
                           "title": "User verifies Home Page Title",
-                          "duration": 5
+                          "duration": 3128
                         }
                       ],
-                      "startTime": "2025-08-19T10:06:56.150Z",
+                      "startTime": "2025-08-20T16:36:56.742Z",
                       "annotations": [
                         {
                           "type": "slow",
                           "location": {
                             "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\HomePage.test.ts",
-                            "line": 12,
+                            "line": 9,
                             "column": 10
                           }
                         }
@@ -371,7 +381,7 @@
               ],
               "id": "1f6eed042b990152e946-efe96c69c1a7982b197d",
               "file": "smoke/HomePage.test.ts",
-              "line": 10,
+              "line": 8,
               "column": 7
             },
             {
@@ -389,10 +399,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 53006,
+                      "duration": 22754,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -400,10 +410,10 @@
                       "steps": [
                         {
                           "title": "User verifies Sign In Link is Visible",
-                          "duration": 148
+                          "duration": 10300
                         }
                       ],
-                      "startTime": "2025-08-19T10:07:06.067Z",
+                      "startTime": "2025-08-20T16:37:03.574Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -419,7 +429,7 @@
               ],
               "id": "1f6eed042b990152e946-ea6924d50138996c33d0",
               "file": "smoke/HomePage.test.ts",
-              "line": 21,
+              "line": 18,
               "column": 7
             },
             {
@@ -436,7 +446,7 @@
                       "type": "slow",
                       "location": {
                         "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\HomePage.test.ts",
-                        "line": 28,
+                        "line": 25,
                         "column": 10
                       }
                     }
@@ -446,10 +456,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 7726,
+                      "duration": 24454,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -457,36 +467,36 @@
                       "steps": [
                         {
                           "title": "User verifies Sort Section is visible",
-                          "duration": 324
+                          "duration": 1126
                         },
                         {
                           "title": "User verifies Price Range Section is visible",
-                          "duration": 10
+                          "duration": 80
                         },
                         {
                           "title": "User verifies Search Section is visible",
-                          "duration": 349
+                          "duration": 56
                         },
                         {
                           "title": "User verifies Filters Section is visible",
-                          "duration": 19
+                          "duration": 57
                         },
                         {
                           "title": "User verifies By Category Section is visible",
-                          "duration": 14
+                          "duration": 98
                         },
                         {
                           "title": "User verifies By Brand Section is visible",
-                          "duration": 11
+                          "duration": 117
                         }
                       ],
-                      "startTime": "2025-08-19T10:07:09.921Z",
+                      "startTime": "2025-08-20T16:37:26.523Z",
                       "annotations": [
                         {
                           "type": "slow",
                           "location": {
                             "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\HomePage.test.ts",
-                            "line": 28,
+                            "line": 25,
                             "column": 10
                           }
                         }
@@ -505,7 +515,7 @@
               ],
               "id": "1f6eed042b990152e946-afcd60b6cd530459a9af",
               "file": "smoke/HomePage.test.ts",
-              "line": 27,
+              "line": 24,
               "column": 7
             },
             {
@@ -523,7 +533,7 @@
                       "type": "slow",
                       "location": {
                         "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\HomePage.test.ts",
-                        "line": 61,
+                        "line": 52,
                         "column": 10
                       }
                     }
@@ -533,10 +543,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 12909,
+                      "duration": 33544,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -544,32 +554,32 @@
                       "steps": [
                         {
                           "title": "User verifies Home Link is visible",
-                          "duration": 112
+                          "duration": 4092
                         },
                         {
                           "title": "User verifies Sign In Link is visible",
-                          "duration": 14
+                          "duration": 256
                         },
                         {
                           "title": "User verifies Categories Link is visible",
-                          "duration": 15
+                          "duration": 963
                         },
                         {
                           "title": "User verifies Contact Link is visible",
-                          "duration": 14
+                          "duration": 142
                         },
                         {
                           "title": "User verifies Language Button is visible",
-                          "duration": 22
+                          "duration": 62
                         }
                       ],
-                      "startTime": "2025-08-19T10:07:16.383Z",
+                      "startTime": "2025-08-20T16:37:28.091Z",
                       "annotations": [
                         {
                           "type": "slow",
                           "location": {
                             "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\HomePage.test.ts",
-                            "line": 61,
+                            "line": 52,
                             "column": 10
                           }
                         }
@@ -588,7 +598,7 @@
               ],
               "id": "1f6eed042b990152e946-7f11d766e4b0c04f788c",
               "file": "smoke/HomePage.test.ts",
-              "line": 60,
+              "line": 51,
               "column": 7
             },
             {
@@ -606,7 +616,7 @@
                       "type": "slow",
                       "location": {
                         "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\HomePage.test.ts",
-                        "line": 91,
+                        "line": 76,
                         "column": 10
                       }
                     }
@@ -619,7 +629,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 11384,
+                      "duration": 10168,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -627,20 +637,20 @@
                       "steps": [
                         {
                           "title": "User verifies Product cards are loaded",
-                          "duration": 333
+                          "duration": 1018
                         },
                         {
                           "title": "User verifies 9 Product cards are displayed",
-                          "duration": 239
+                          "duration": 17
                         }
                       ],
-                      "startTime": "2025-08-19T10:07:17.689Z",
+                      "startTime": "2025-08-20T16:37:42.149Z",
                       "annotations": [
                         {
                           "type": "slow",
                           "location": {
                             "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\HomePage.test.ts",
-                            "line": 91,
+                            "line": 76,
                             "column": 10
                           }
                         }
@@ -659,7 +669,7 @@
               ],
               "id": "1f6eed042b990152e946-6dc417f28e47e1c4365d",
               "file": "smoke/HomePage.test.ts",
-              "line": 90,
+              "line": 75,
               "column": 7
             }
           ]
@@ -676,7 +686,7 @@
         {
           "title": "Login Page Tests",
           "file": "smoke/LoginPage.test.ts",
-          "line": 8,
+          "line": 6,
           "column": 6,
           "specs": [
             {
@@ -695,10 +705,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 11911,
+                      "duration": 22916,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -706,10 +716,10 @@
                       "steps": [
                         {
                           "title": "User verifies Sign In Link is Visible",
-                          "duration": 2758
+                          "duration": 3508
                         }
                       ],
-                      "startTime": "2025-08-19T10:07:29.125Z",
+                      "startTime": "2025-08-20T16:37:51.019Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -725,7 +735,7 @@
               ],
               "id": "b4519f94ff1c5c365994-70c3d8e0ede6a387d48f",
               "file": "smoke/LoginPage.test.ts",
-              "line": 13,
+              "line": 11,
               "column": 7
             },
             {
@@ -743,7 +753,7 @@
                       "type": "slow",
                       "location": {
                         "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\LoginPage.test.ts",
-                        "line": 20,
+                        "line": 18,
                         "column": 10
                       }
                     }
@@ -753,10 +763,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 12596,
+                      "duration": 28628,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -764,20 +774,20 @@
                       "steps": [
                         {
                           "title": "User clicks Sign In",
-                          "duration": 5555
+                          "duration": 6141
                         },
                         {
                           "title": "User verifies Login Form is displayed",
-                          "duration": 8
+                          "duration": 492
                         }
                       ],
-                      "startTime": "2025-08-19T10:07:29.352Z",
+                      "startTime": "2025-08-20T16:37:52.375Z",
                       "annotations": [
                         {
                           "type": "slow",
                           "location": {
                             "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\LoginPage.test.ts",
-                            "line": 20,
+                            "line": 18,
                             "column": 10
                           }
                         }
@@ -796,7 +806,7 @@
               ],
               "id": "b4519f94ff1c5c365994-a0f2bca2c79b1e8e1d17",
               "file": "smoke/LoginPage.test.ts",
-              "line": 19,
+              "line": 17,
               "column": 7
             },
             {
@@ -814,7 +824,7 @@
                       "type": "slow",
                       "location": {
                         "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\LoginPage.test.ts",
-                        "line": 31,
+                        "line": 28,
                         "column": 10
                       }
                     }
@@ -824,10 +834,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 15251,
+                      "duration": 14291,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -835,28 +845,28 @@
                       "steps": [
                         {
                           "title": "User clicks Sign In",
-                          "duration": 4141
+                          "duration": 1706
                         },
                         {
                           "title": "User verifies Email field is visible",
-                          "duration": 412
+                          "duration": 615
                         },
                         {
                           "title": "User verifies Password field is visible",
-                          "duration": 121
+                          "duration": 55
                         },
                         {
                           "title": "User verifies SignIn With Google button is visible",
-                          "duration": 65
+                          "duration": 89
                         }
                       ],
-                      "startTime": "2025-08-19T10:07:41.196Z",
+                      "startTime": "2025-08-20T16:38:01.699Z",
                       "annotations": [
                         {
                           "type": "slow",
                           "location": {
                             "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\LoginPage.test.ts",
-                            "line": 31,
+                            "line": 28,
                             "column": 10
                           }
                         }
@@ -875,7 +885,7 @@
               ],
               "id": "b4519f94ff1c5c365994-9683a6b577954ef0628c",
               "file": "smoke/LoginPage.test.ts",
-              "line": 30,
+              "line": 27,
               "column": 7
             },
             {
@@ -890,7 +900,7 @@
                       "type": "slow",
                       "location": {
                         "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\LoginPage.test.ts",
-                        "line": 47,
+                        "line": 44,
                         "column": 10
                       }
                     }
@@ -903,7 +913,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 15730,
+                      "duration": 16544,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -911,20 +921,20 @@
                       "steps": [
                         {
                           "title": "User clicks Sign In",
-                          "duration": 3800
+                          "duration": 1889
                         },
                         {
                           "title": "User verifies Forgot Password link is visible",
-                          "duration": 94
+                          "duration": 221
                         }
                       ],
-                      "startTime": "2025-08-19T10:07:42.061Z",
+                      "startTime": "2025-08-20T16:38:14.024Z",
                       "annotations": [
                         {
                           "type": "slow",
                           "location": {
                             "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\LoginPage.test.ts",
-                            "line": 47,
+                            "line": 44,
                             "column": 10
                           }
                         }
@@ -943,7 +953,7 @@
               ],
               "id": "b4519f94ff1c5c365994-e51d2dcb119a8e48e7ef",
               "file": "smoke/LoginPage.test.ts",
-              "line": 46,
+              "line": 43,
               "column": 7
             },
             {
@@ -959,10 +969,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 51060,
+                      "duration": 32928,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -970,14 +980,14 @@
                       "steps": [
                         {
                           "title": "User clicks Sign In",
-                          "duration": 21391
+                          "duration": 1532
                         },
                         {
                           "title": "User verifies Register link is visible",
-                          "duration": 945
+                          "duration": 166
                         }
                       ],
-                      "startTime": "2025-08-19T10:07:56.686Z",
+                      "startTime": "2025-08-20T16:38:16.132Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -993,7 +1003,7 @@
               ],
               "id": "b4519f94ff1c5c365994-0a453b45f9d41e46407d",
               "file": "smoke/LoginPage.test.ts",
-              "line": 56,
+              "line": 53,
               "column": 7
             },
             {
@@ -1008,7 +1018,7 @@
                       "type": "slow",
                       "location": {
                         "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\LoginPage.test.ts",
-                        "line": 66,
+                        "line": 63,
                         "column": 10
                       }
                     }
@@ -1018,10 +1028,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 51568,
+                      "duration": 54214,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -1029,36 +1039,36 @@
                       "steps": [
                         {
                           "title": "User clicks Sign In",
-                          "duration": 1842
+                          "duration": 2094
                         },
                         {
                           "title": "User fills Email",
-                          "duration": 14642
+                          "duration": 1221
                         },
                         {
                           "title": "User fills Password",
-                          "duration": 6114
+                          "duration": 1637
                         },
                         {
                           "title": "User clicks Login Button",
-                          "duration": 2446
+                          "duration": 4627
                         },
                         {
                           "title": "User verifies My Account page is displayed",
-                          "duration": 5969
+                          "duration": 2663
                         },
                         {
                           "title": "User verifies Logout link is visible",
-                          "duration": 3833
+                          "duration": 3885
                         }
                       ],
-                      "startTime": "2025-08-19T10:07:57.819Z",
+                      "startTime": "2025-08-20T16:38:21.775Z",
                       "annotations": [
                         {
                           "type": "slow",
                           "location": {
                             "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\LoginPage.test.ts",
-                            "line": 66,
+                            "line": 63,
                             "column": 10
                           }
                         }
@@ -1077,7 +1087,7 @@
               ],
               "id": "b4519f94ff1c5c365994-77ea3ee0324a53f8d881",
               "file": "smoke/LoginPage.test.ts",
-              "line": 65,
+              "line": 62,
               "column": 7
             },
             {
@@ -1092,7 +1102,7 @@
                       "type": "slow",
                       "location": {
                         "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\LoginPage.test.ts",
-                        "line": 88,
+                        "line": 85,
                         "column": 10
                       }
                     }
@@ -1102,10 +1112,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 49447,
+                      "duration": 56945,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -1113,32 +1123,32 @@
                       "steps": [
                         {
                           "title": "User clicks Sign In",
-                          "duration": 19161
+                          "duration": 13118
                         },
                         {
                           "title": "User fills Email",
-                          "duration": 4384
+                          "duration": 1101
                         },
                         {
                           "title": "User fills Password",
-                          "duration": 1171
+                          "duration": 1097
                         },
                         {
                           "title": "User clicks Login Button",
-                          "duration": 3508
+                          "duration": 1141
                         },
                         {
                           "title": "User verifies Unsuccessful Login",
-                          "duration": 1074
+                          "duration": 1945
                         }
                       ],
-                      "startTime": "2025-08-19T10:07:59.114Z",
+                      "startTime": "2025-08-20T16:38:30.926Z",
                       "annotations": [
                         {
                           "type": "slow",
                           "location": {
                             "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\LoginPage.test.ts",
-                            "line": 88,
+                            "line": 85,
                             "column": 10
                           }
                         }
@@ -1157,7 +1167,7 @@
               ],
               "id": "b4519f94ff1c5c365994-63c292520001518a9ed1",
               "file": "smoke/LoginPage.test.ts",
-              "line": 87,
+              "line": 84,
               "column": 7
             }
           ]
@@ -1190,10 +1200,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 25361,
+                      "duration": 13402,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -1201,10 +1211,10 @@
                       "steps": [
                         {
                           "title": "User verifies Sign In Link is Visible",
-                          "duration": 256
+                          "duration": 1140
                         }
                       ],
-                      "startTime": "2025-08-19T10:08:47.802Z",
+                      "startTime": "2025-08-20T16:38:49.684Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1239,7 +1249,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 40483,
+                      "duration": 43354,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -1247,30 +1257,30 @@
                       "steps": [
                         {
                           "title": "User clicks Sign In",
-                          "duration": 8195
+                          "duration": 1687
                         },
                         {
                           "title": "User fills Email",
-                          "duration": 5157
+                          "duration": 2222
                         },
                         {
                           "title": "User fills Password",
-                          "duration": 1064
+                          "duration": 1313
                         },
                         {
                           "title": "User clicks Login Button",
-                          "duration": 1209
+                          "duration": 1451
                         },
                         {
                           "title": "User verifies My Account Page",
-                          "duration": 2760
+                          "duration": 3378
                         },
                         {
                           "title": "User verifies Logout link is visible",
-                          "duration": 186
+                          "duration": 3712
                         }
                       ],
-                      "startTime": "2025-08-19T10:08:48.650Z",
+                      "startTime": "2025-08-20T16:39:03.292Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1321,10 +1331,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 37939,
+                      "duration": 22894,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -1332,14 +1342,14 @@
                       "steps": [
                         {
                           "title": "User clicks Sign In",
-                          "duration": 10832
+                          "duration": 1998
                         },
                         {
                           "title": "User verifies Register link is visible",
-                          "duration": 651
+                          "duration": 627
                         }
                       ],
-                      "startTime": "2025-08-19T10:08:49.436Z",
+                      "startTime": "2025-08-20T16:39:16.133Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1373,10 +1383,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 13799,
+                      "duration": 24675,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -1384,14 +1394,14 @@
                       "steps": [
                         {
                           "title": "User clicks Sign In",
-                          "duration": 1540
+                          "duration": 1582
                         },
                         {
                           "title": "User navigates to Register User page",
-                          "duration": 2078
+                          "duration": 2330
                         }
                       ],
-                      "startTime": "2025-08-19T10:09:13.204Z",
+                      "startTime": "2025-08-20T16:39:27.997Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1437,7 +1447,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 73922,
+                      "duration": 66091,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -1445,26 +1455,26 @@
                       "steps": [
                         {
                           "title": "User clicks Sign In",
-                          "duration": 12115
+                          "duration": 5284
                         },
                         {
                           "title": "User navigates to Register User page",
-                          "duration": 5363
+                          "duration": 2291
                         },
                         {
                           "title": "User fills Registration Form",
-                          "duration": 20439
+                          "duration": 15367
                         },
                         {
                           "title": "User selects Country",
-                          "duration": 1015
+                          "duration": 1761
                         },
                         {
                           "title": "User submits Registration Form",
-                          "duration": 3823
+                          "duration": 8654
                         }
                       ],
-                      "startTime": "2025-08-19T10:09:27.078Z",
+                      "startTime": "2025-08-20T16:39:39.094Z",
                       "annotations": [
                         {
                           "type": "slow",
@@ -1508,10 +1518,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 69276,
+                      "duration": 52615,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -1519,22 +1529,22 @@
                       "steps": [
                         {
                           "title": "User clicks Sign In",
-                          "duration": 8445
+                          "duration": 9020
                         },
                         {
                           "title": "User navigates to Register User page",
-                          "duration": 17149
+                          "duration": 5166
                         },
                         {
                           "title": "User submits blank Registration Form",
-                          "duration": 2401
+                          "duration": 2044
                         },
                         {
                           "title": "User verifies error message is visible on blank submit",
-                          "duration": 4434
+                          "duration": 746
                         }
                       ],
-                      "startTime": "2025-08-19T10:09:27.542Z",
+                      "startTime": "2025-08-20T16:39:48.257Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1578,66 +1588,37 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 73187,
-                      "error": {
-                        "message": "TimeoutError: page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//h1[normalize-space()=\\'My account\\']') to be visible\u001b[22m\n",
-                        "stack": "TimeoutError: page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//h1[normalize-space()=\\'My account\\']') to be visible\u001b[22m\n\n    at LocatorUtils.waitForSelector (D:\\Playwright\\playwrightAutoFramework\\utilities\\locatorUtils.ts:6:20)\n    at LoginPage.verifyMyAccountPage (D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\pages\\LoginPage.ts:74:33)\n    at D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\RegisterUser.spec.ts:76:23\n    at D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\RegisterUser.spec.ts:75:16",
-                        "location": {
-                          "file": "D:\\Playwright\\playwrightAutoFramework\\utilities\\locatorUtils.ts",
-                          "column": 20,
-                          "line": 6
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39m..\\..\\..\\utilities\\locatorUtils.ts:6\n\n\u001b[0m \u001b[90m 4 |\u001b[39m     \n \u001b[90m 5 |\u001b[39m     \u001b[36masync\u001b[39m waitForSelector(page\u001b[33m:\u001b[39m \u001b[33mPage\u001b[39m\u001b[33m,\u001b[39m selector\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m options\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m { state\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m \u001b[33m|\u001b[39m \u001b[32m'hidden'\u001b[39m \u001b[33m|\u001b[39m \u001b[32m'attached'\u001b[39m \u001b[33m|\u001b[39m \u001b[32m'detached'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m number })\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(selector\u001b[33m,\u001b[39m options \u001b[33m?\u001b[39m\u001b[33m?\u001b[39m {})\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m     }\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m     \u001b[36masync\u001b[39m waitAndClick(page\u001b[33m:\u001b[39m \u001b[33mPage\u001b[39m\u001b[33m,\u001b[39m selector\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m options\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m { timeout\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m number }) {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "D:\\Playwright\\playwrightAutoFramework\\utilities\\locatorUtils.ts",
-                            "column": 20,
-                            "line": 6
-                          },
-                          "message": "TimeoutError: page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//h1[normalize-space()=\\'My account\\']') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\..\\..\\utilities\\locatorUtils.ts:6\n\n\u001b[0m \u001b[90m 4 |\u001b[39m     \n \u001b[90m 5 |\u001b[39m     \u001b[36masync\u001b[39m waitForSelector(page\u001b[33m:\u001b[39m \u001b[33mPage\u001b[39m\u001b[33m,\u001b[39m selector\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m options\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m { state\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m \u001b[33m|\u001b[39m \u001b[32m'hidden'\u001b[39m \u001b[33m|\u001b[39m \u001b[32m'attached'\u001b[39m \u001b[33m|\u001b[39m \u001b[32m'detached'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m number })\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(selector\u001b[33m,\u001b[39m options \u001b[33m?\u001b[39m\u001b[33m?\u001b[39m {})\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m     }\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m     \u001b[36masync\u001b[39m waitAndClick(page\u001b[33m:\u001b[39m \u001b[33mPage\u001b[39m\u001b[33m,\u001b[39m selector\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m options\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m { timeout\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m number }) {\u001b[0m\n\u001b[2m    at LocatorUtils.waitForSelector (D:\\Playwright\\playwrightAutoFramework\\utilities\\locatorUtils.ts:6:20)\u001b[22m\n\u001b[2m    at LoginPage.verifyMyAccountPage (D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\pages\\LoginPage.ts:74:33)\u001b[22m\n\u001b[2m    at D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\RegisterUser.spec.ts:76:23\u001b[22m\n\u001b[2m    at D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\RegisterUser.spec.ts:75:16\u001b[22m"
-                        }
-                      ],
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 49608,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
                           "title": "User clicks Sign In",
-                          "duration": 23424
+                          "duration": 8647
                         },
                         {
                           "title": "User fills Email",
-                          "duration": 974
+                          "duration": 1108
                         },
                         {
                           "title": "User fills Password",
-                          "duration": 1247
+                          "duration": 1666
                         },
                         {
                           "title": "User clicks Login Button",
-                          "duration": 2811
+                          "duration": 1498
                         },
                         {
                           "title": "User waits for My Account Page",
-                          "duration": 15135,
-                          "error": {
-                            "message": "TimeoutError: page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//h1[normalize-space()=\\'My account\\']') to be visible\u001b[22m\n",
-                            "stack": "TimeoutError: page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//h1[normalize-space()=\\'My account\\']') to be visible\u001b[22m\n\n    at LocatorUtils.waitForSelector (D:\\Playwright\\playwrightAutoFramework\\utilities\\locatorUtils.ts:6:20)\n    at LoginPage.verifyMyAccountPage (D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\pages\\LoginPage.ts:74:33)\n    at D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\RegisterUser.spec.ts:76:23\n    at D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\RegisterUser.spec.ts:75:16",
-                            "location": {
-                              "file": "D:\\Playwright\\playwrightAutoFramework\\utilities\\locatorUtils.ts",
-                              "column": 20,
-                              "line": 6
-                            },
-                            "snippet": "\u001b[90m   at \u001b[39m..\\..\\..\\utilities\\locatorUtils.ts:6\n\n\u001b[0m \u001b[90m 4 |\u001b[39m     \n \u001b[90m 5 |\u001b[39m     \u001b[36masync\u001b[39m waitForSelector(page\u001b[33m:\u001b[39m \u001b[33mPage\u001b[39m\u001b[33m,\u001b[39m selector\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m options\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m { state\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m \u001b[33m|\u001b[39m \u001b[32m'hidden'\u001b[39m \u001b[33m|\u001b[39m \u001b[32m'attached'\u001b[39m \u001b[33m|\u001b[39m \u001b[32m'detached'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m number })\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(selector\u001b[33m,\u001b[39m options \u001b[33m?\u001b[39m\u001b[33m?\u001b[39m {})\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m     }\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m     \u001b[36masync\u001b[39m waitAndClick(page\u001b[33m:\u001b[39m \u001b[33mPage\u001b[39m\u001b[33m,\u001b[39m selector\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m options\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m { timeout\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m number }) {\u001b[0m"
-                          }
+                          "duration": 2242
                         }
                       ],
-                      "startTime": "2025-08-19T10:09:29.174Z",
+                      "startTime": "2025-08-20T16:39:53.419Z",
                       "annotations": [
                         {
                           "type": "slow",
@@ -1649,85 +1630,15 @@
                         }
                       ],
                       "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-RegisterUser-Registe-8e31e-newly-added-user-can-log-in-chromium\\test-failed-1.png"
-                        },
                         {
                           "name": "video",
                           "contentType": "video/webm",
                           "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-RegisterUser-Registe-8e31e-newly-added-user-can-log-in-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-RegisterUser-Registe-8e31e-newly-added-user-can-log-in-chromium\\error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "D:\\Playwright\\playwrightAutoFramework\\utilities\\locatorUtils.ts",
-                        "column": 20,
-                        "line": 6
-                      }
-                    },
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 14751,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 1,
-                      "steps": [
-                        {
-                          "title": "User clicks Sign In",
-                          "duration": 1224
-                        },
-                        {
-                          "title": "User fills Email",
-                          "duration": 1189
-                        },
-                        {
-                          "title": "User fills Password",
-                          "duration": 1162
-                        },
-                        {
-                          "title": "User clicks Login Button",
-                          "duration": 1296
-                        },
-                        {
-                          "title": "User waits for My Account Page",
-                          "duration": 1310
-                        }
-                      ],
-                      "startTime": "2025-08-19T10:10:49.881Z",
-                      "annotations": [
-                        {
-                          "type": "slow",
-                          "location": {
-                            "file": "D:\\Playwright\\playwrightAutoFramework\\toolshop\\src\\tests\\smoke\\RegisterUser.spec.ts",
-                            "line": 62,
-                            "column": 10
-                          }
-                        }
-                      ],
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-RegisterUser-Registe-8e31e-newly-added-user-can-log-in-chromium-retry1\\video.webm"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Playwright\\playwrightAutoFramework\\test-results\\smoke-RegisterUser-Registe-8e31e-newly-added-user-can-log-in-chromium-retry1\\trace.zip"
                         }
                       ]
                     }
                   ],
-                  "status": "flaky"
+                  "status": "expected"
                 }
               ],
               "id": "a862e580dea3469a7cc3-717b6bb706bc6da90a6e",
@@ -1742,11 +1653,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-19T10:05:52.160Z",
-    "duration": 315812.468,
-    "expected": 21,
+    "startTime": "2025-08-20T16:35:18.729Z",
+    "duration": 333029.869,
+    "expected": 22,
     "skipped": 0,
     "unexpected": 0,
-    "flaky": 1
+    "flaky": 0
   }
 }
