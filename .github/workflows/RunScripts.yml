@@ -81,6 +81,15 @@ jobs:
           npm_config_SKIPPED: ${{ env.SKIPPED }}
           npm_config_TOTAL: ${{ env.TOTAL }}
 
+      - name: Create Step Summary
+        if: always()
+        run: |
+          echo "## Test Execution Results" >> $GITHUB_STEP_SUMMARY
+          echo "$(cat summary.txt)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Results Chart" >> $GITHUB_STEP_SUMMARY
+          echo "![Test Results]($(base64 -w 0 test-results.png | sed 's/^/data:image\/png;base64,/'))" >> $GITHUB_STEP_SUMMARY
+
       - name: Upload Test Results Chart
         if: always()
         uses: actions/upload-artifact@v4
