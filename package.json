@@ -8,7 +8,7 @@
     "test:ui": "playwright test --ui",
     "test:debug": "playwright test --debug",
     "test:report": "playwright show-report",
-    "test:images": "npx ts-node utils/customGenerate.ts",
+    "test:images": "npx ts-node utilities/customGenerate.ts",
     "allure": "allure generate ./allure-results -o allure-report --clean && allure open ./allure-report"
   },
   "keywords": [],
