@@ -44,8 +44,8 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+      - name: Install Selected Playwright Browser(${{ github.event.inputs.browser }})
+        run: npx playwright install ${{ github.event.inputs.browser }} --with-deps
 
       - name: Run Playwright Tests
         env:
