@@ -15,7 +15,7 @@ A robust end-to-end testing framework built with [Playwright](https://playwright
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/your-username/playwright-ts-framework.git
+git clone https://github.com/koustavs/PlaywrightStandardFramework.git
 cd playwright-ts-framework
 npm install
 ```

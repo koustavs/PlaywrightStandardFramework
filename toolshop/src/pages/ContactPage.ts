@@ -53,7 +53,7 @@ export class ContactPage {
         }
         await this.selectSubject(subjectValue);
         await this.page.fill(locators.ContactPage.Message_Txt, 'This is a test message.This is a test message.This is a test message.');
-        await this.uploadFile(path.join(__dirname, '..\\..\\..\\Test.txt'));
+        await this.uploadFile(path.resolve(__dirname, '../../../Test.txt'));
         await this.page.click(locators.ContactPage.SendMessage_Btn);
     }
 
