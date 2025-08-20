@@ -1,4 +1,4 @@
-name: Run Playwright Tests
+name: Run Playwright Tests for the Framework
 
 on:
     workflow_dispatch:
@@ -30,18 +30,18 @@ on:
                     - Regression
 
 jobs:
-    run-playwright-tests:
+    Regression:
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout repository
+            - name: Checkout Repository
                 uses: actions/checkout@v4
 
             - name: Setup Node.js
                 uses: actions/setup-node@v4
                 with:
-                    node-version: '20'
+                    node-version: lts/*
 
-            - name: Install dependencies
+            - name: Install Dependencies
                 run: npm ci
 
             - name: Install Playwright Browsers
@@ -54,7 +54,8 @@ jobs:
                     TEST_TYPE: ${{ github.event.inputs.test_type }}
                 run: |
                     echo "Running tests for $APP with $BROWSER ($TEST_TYPE)"
-                    npx playwright test --project=$BROWSER --grep "$TEST_TYPE" --config=playwright.$APP.config.ts
+                    # npx playwright test --project=$BROWSER --grep "$TEST_TYPE" --config=playwright.config.ts
+                    npx playwright test --project=$BROWSER
 
             - name: Archive Build Reports
               if: always()
