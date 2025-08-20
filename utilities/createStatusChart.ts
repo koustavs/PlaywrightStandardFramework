@@ -14,12 +14,12 @@ const date = new Date();
 const utcTimestamp = date.toUTCString(); // Example output: "Tue, 22 Apr 2025 14:30:00 GMT"
 
 const summaryText = `Total: ${TOTAL} | ✅ Passed: ${PASSED} (⚠️ Flaky: ${FLAKY}) | ❌ Failed: ${FAILED} | ⏭️ Skipped: ${SKIPPED}`;
-fs.writeFileSync('summary.txt', summaryText);
-console.log('Summary written to summary.txt');
+// fs.writeFileSync('summary.txt', summaryText);
+// console.log('Summary written to summary.txt');
 
 const descriptionPlugin = {
   id: 'statusDescriptions',
-  afterDraw(chart) {
+  afterDraw(chart: ChartJS) {
     const { ctx, chartArea, width } = chart;
  
     const lines = [
