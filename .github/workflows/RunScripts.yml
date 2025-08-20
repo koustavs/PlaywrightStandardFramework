@@ -57,9 +57,9 @@ jobs:
           # npx playwright test --project=$BROWSER --grep "$TEST_TYPE" --config=playwright.config.ts
           npx playwright test --project=$BROWSER
 
-      - name: Archive Build Reports
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: HTML-Report
-          path: ${{ github.workspace }}/html-report
+- name: Archive Build Reports
+  if: always()
+  uses: actions/upload-artifact@v4
+  with:
+    name: HTML-Report
+    path: ${{ github.workspace }}/html-report
