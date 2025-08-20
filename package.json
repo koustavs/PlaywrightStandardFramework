@@ -20,5 +20,10 @@
     "allure-commandline": "^2.34.1",
     "allure-playwright": "^3.3.3",
     "monocart-reporter": "^2.9.21"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.0",
+    "chartjs-node-canvas": "^5.0.0",
+    "chartjs-plugin-datalabels": "^2.2.0"
   }
 }

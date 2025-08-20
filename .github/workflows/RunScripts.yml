@@ -57,6 +57,43 @@ jobs:
           # npx playwright test --project=$BROWSER --grep "$TEST_TYPE" --config=playwright.config.ts
           npx playwright test --project=$BROWSER
 
+      - name: Read Summary Report to Get Test Results
+        if: always()
+        run: |
+          PASSED=$(jq -r '.stats.expected' outputs/test-results.json)
+          echo "PASSED=$PASSED" >> $GITHUB_ENV 
+          FAILURES=$(jq -r '.stats.unexpected' outputs/test-results.json)
+          echo "FAILURES=$FAILURES" >> $GITHUB_ENV
+          FLAKY=$(jq -r '.stats.flaky' outputs/test-results.json)
+          echo "FLAKY=$FLAKY" >> $GITHUB_ENV
+          SKIPPED=$(jq -r '.stats.skipped' outputs/test-results.json)
+          echo "SKIPPED=$SKIPPED" >> $GITHUB_ENV
+          TOTAL=$((PASSED + FAILURES + FLAKY + SKIPPED))
+          echo "TOTAL=$TOTAL" >> $GITHUB_ENV
+
+      - name: Generate Images
+        if: ${{ env.TOTAL != '' }}
+        run: npm run test:images
+        env:
+          npm_config_PASSED: ${{ env.PASSED }}
+          npm_config_FAILED: ${{ env.FAILURES }}
+          npm_config_FLAKY: ${{ env.FLAKY }}
+          npm_config_SKIPPED: ${{ env.SKIPPED }}
+          npm_config_TOTAL: ${{ env.TOTAL }}
+
+      - name: Upload Test Results Chart
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results-chart
+          path: test-results.png
+
+      - name: Display Test Results Link
+        if: always()
+        run: |
+          echo "::notice::Test Results Chart is available at: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts"
+          echo "Summary: Total:${{ env.TOTAL }} | ✅ Passed:${{ env.PASSED }} | ❌ Failed:${{ env.FAILURES }} | ⚠️ Flaky:${{ env.FLAKY }} | ⏭️ Skipped:${{ env.SKIPPED }}"          
+
       - name: Archive Build Reports
         if: always()
         uses: actions/upload-artifact@v4

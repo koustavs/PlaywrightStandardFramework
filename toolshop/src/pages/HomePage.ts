@@ -109,13 +109,11 @@ export class HomePage {
 
   async getPageTitle(): Promise<string> {
     let title = await this.page.title();
-    console.log(`Page title is: ${title}`);
     return title;
   }
 
   async verifyPageTitle(): Promise<void> {
     let actualTitle = await this.getPageTitle();
-    console.log(`Page actualTitle is: ${actualTitle}`);
     expect(actualTitle).toMatch("Practice Software Testing");
   }
 
