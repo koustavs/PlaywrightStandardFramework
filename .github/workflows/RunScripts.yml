@@ -1,65 +1,65 @@
 name: Run Playwright Tests for the Framework
 
 on:
-    workflow_dispatch:
-        inputs:
-            browser:
-                description: 'Select browser'
-                required: true
-                default: 'chromium'
-                type: choice
-                options:
-                    - chromium
-                    - webkit
-                    - firefox
-            app:
-                description: 'Select app name'
-                required: true
-                default: 'toolshop'
-                type: choice
-                options:
-                    - toolshop
-                    - autoexec
-            test_type:
-                description: 'Select test type'
-                required: true
-                default: 'Smoke'
-                type: choice
-                options:
-                    - Smoke
-                    - Regression
+  workflow_dispatch:
+    inputs:
+      browser:
+        description: 'Select browser'
+        required: true
+        default: 'chromium'
+        type: choice
+        options:
+          - chromium
+          - webkit
+          - firefox
+      app:
+        description: 'Select app name'
+        required: true
+        default: 'toolshop'
+        type: choice
+        options:
+          - toolshop
+          - autoexec
+      test_type:
+        description: 'Select test type'
+        required: true
+        default: 'Smoke'
+        type: choice
+        options:
+          - Smoke
+          - Regression
 
 jobs:
-    Regression:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout Repository
-                uses: actions/checkout@v4
+  Regression:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-            - name: Setup Node.js
-                uses: actions/setup-node@v4
-                with:
-                    node-version: lts/*
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
 
-            - name: Install Dependencies
-                run: npm ci
+      - name: Install Dependencies
+        run: npm ci
 
-            - name: Install Playwright Browsers
-                run: npx playwright install --with-deps
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
 
-            - name: Run Playwright Tests
-                env:
-                    BROWSER: ${{ github.event.inputs.browser }}
-                    APP: ${{ github.event.inputs.app }}
-                    TEST_TYPE: ${{ github.event.inputs.test_type }}
-                run: |
-                    echo "Running tests for $APP with $BROWSER ($TEST_TYPE)"
-                    # npx playwright test --project=$BROWSER --grep "$TEST_TYPE" --config=playwright.config.ts
-                    npx playwright test --project=$BROWSER
+      - name: Run Playwright Tests
+        env:
+          BROWSER: ${{ github.event.inputs.browser }}
+          APP: ${{ github.event.inputs.app }}
+          TEST_TYPE: ${{ github.event.inputs.test_type }}
+        run: |
+          echo "Running tests for $APP with $BROWSER ($TEST_TYPE)"
+          # npx playwright test --project=$BROWSER --grep "$TEST_TYPE" --config=playwright.config.ts
+          npx playwright test --project=$BROWSER
 
-            - name: Archive Build Reports
-                if: always()
-                uses: actions/upload-artifact@v4
-                with:
-                    name: HTML-Report
-                    path: ${{ github.workspace }}/html-report
+      - name: Archive Build Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: HTML-Report
+          path: ${{ github.workspace }}/html-report
