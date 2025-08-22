@@ -52,7 +52,7 @@ export default defineConfig({
         screenshots: false,
         inlineAttachments: false,
         metadata: false,
-        onEnd: async (reportData, capability) => {
+        onEnd: async (reportData: any, capability: any) => {
         }
       }
     ]
@@ -87,15 +87,37 @@ export default defineConfig({
       },
     },
 
-    // {
-    //   name: 'firefox',
-    //   use: { ...devices['Desktop Firefox'] },
-    // },
+    {
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'],
+        ignoreHTTPSErrors: true,
+        acceptDownloads: true,
+        screenshot: `only-on-failure`,
+        video:'on',
+        launchOptions: {
+          slowMo: 900,
+          args: [
+            "--start-maximized",
+          ]
+        }
+      },
+    },
 
-    // {
-    //   name: 'webkit',
-    //   use: { ...devices['Desktop Safari'] },
-    // },
+    {
+      name: 'webkit',
+      use: { ...devices['Desktop Safari'],
+        ignoreHTTPSErrors: true,
+        acceptDownloads: true,
+        screenshot: `only-on-failure`,
+        video:'on',
+        launchOptions: {
+          slowMo: 900,
+          args: [
+            "--start-maximized",
+          ]
+        }
+      },
+    },
 
     /* Test against mobile viewports. */
     // {
